@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <h1>Add Sites</h1>
+    <form action="create" method="post">
+      <textarea rows="20" cols="60" name="sites"></textarea>
+      <p/>
+      <input type="submit" value="Upload"/>
+    </form>
+  </body>
+</html>

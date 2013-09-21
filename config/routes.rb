@@ -1,5 +1,10 @@
 SchoolnetworkSearchPrototype::Application.routes.draw do
-  root 'sites#index'
+  #  root 'sites#index'
+
+  get 'sites/new' => 'sites#new'
+  get 'sites' => 'sites#index'
+  post 'sites/bulk_create' => 'sites#bulk_create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

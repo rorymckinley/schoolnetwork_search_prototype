@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>Add Sites</h1>
+    <form action="bulk_create" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>"/>
+      <textarea rows="20" cols="60" name="sites"></textarea>
+      <p/>
+      <input type="submit" value="Upload"/>
+    </form>
+  </body>
+</html>

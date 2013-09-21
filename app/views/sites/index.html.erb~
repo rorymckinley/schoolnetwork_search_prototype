@@ -1,0 +1,3 @@
+<% @sites.each do |site| %>
+  <p><%= site.name %></p>
+<% end %>
