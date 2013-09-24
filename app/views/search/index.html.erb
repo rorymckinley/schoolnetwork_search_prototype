@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>SchoolNetwork Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results</h1>
+    <% @results.each do |result| %>
+    <div>
+      <a href="<%= result[:clickurl] %>"><%= result[:title] %></a><br/>
+      <%= result[:abstract] %><br/>
+      <br/>
+      <%= result[:dispurl] %>
+    </div>
+    <p/>
+    <% end %>
+  </body>
+</html>
