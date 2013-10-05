@@ -19,8 +19,10 @@ class Search
 
     search_params = { "format" => @format, "count" => @count,
       "sites" => sites_to_search, "q" => URI.encode(search_phrase) }
-    
-    JSON.parse(search_against_boss(search_params), symbolize_names: true)[:bossresponse][:limitedweb][:results]
+
+    response= search_against_boss(search_params)
+    Rails.logger.error response.inspect
+    JSON.parse(response, symbolize_names: true)[:bossresponse][:limitedweb][:results]
   end
 
   def search_against_boss(args)
